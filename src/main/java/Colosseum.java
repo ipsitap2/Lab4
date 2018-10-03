@@ -72,6 +72,7 @@ public class Colosseum {
      *         Implement this function.
      */
     public static Pokemon buildPokemon() {
+        myScan = new Scanner(System.in);
         Pokemon tempPokemon = new Pokemon();
 
         System.out.print("Please name your Pokemon:");
@@ -123,7 +124,8 @@ public class Colosseum {
 
         if (firstPokemon.hitPoints > secondPokemon.hitPoints) {
             System.out.println(firstPokemon.name +  " is currently ahead!");
-        } else if () {
+        } else {
+            System.out.println(secondPokemon.name +  " is currently ahead!");
 
         }
 
@@ -196,7 +198,7 @@ public class Colosseum {
      * @param unused unused input arguments.
      */
     public static void main(final String[] unused) {
-        myScan = new Scanner(System.in);
+
         initializePokemon();
         determineOrder();
         System.out.println("");
